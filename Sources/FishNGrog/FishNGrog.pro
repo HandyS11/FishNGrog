@@ -14,7 +14,8 @@ TARGET = FishNGrog
 
 CONFIG += sailfishapp
 
-SOURCES += src/FishNGrog.cpp
+SOURCES += src/FishNGrog.cpp \
+    src/fish.cpp
 
 DISTFILES += qml/FishNGrog.qml \
     qml/cover/CoverPage.qml \
@@ -37,3 +38,6 @@ CONFIG += sailfishapp_i18n
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += translations/FishNGrog-de.ts
+
+HEADERS += \
+    src/fish.h
