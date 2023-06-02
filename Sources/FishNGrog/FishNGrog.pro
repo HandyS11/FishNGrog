@@ -18,8 +18,8 @@ SOURCES += src/FishNGrog.cpp
 
 DISTFILES += qml/FishNGrog.qml \
     qml/cover/CoverPage.qml \
-    qml/pages/FirstPage.qml \
-    qml/pages/SecondPage.qml \
+    qml/pages/DetailPage.qml \
+    qml/pages/MasterPage.qml \
     rpm/FishNGrog.changes.in \
     rpm/FishNGrog.changes.run.in \
     rpm/FishNGrog.spec \

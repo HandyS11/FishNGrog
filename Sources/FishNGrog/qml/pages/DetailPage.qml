@@ -3,8 +3,6 @@ import Sailfish.Silica 1.0
 
 Page {
     id: page
-
-    // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: Orientation.All
 
     SilicaListView {
@@ -12,7 +10,7 @@ Page {
         model: 20
         anchors.fill: parent
         header: PageHeader {
-            title: qsTr("Nested Page")
+            title: qsTr("Detail page")
         }
         delegate: BackgroundItem {
             id: delegate

@@ -19,7 +19,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Hello Sailors</source>
+        <source>Hello Sailors!!</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

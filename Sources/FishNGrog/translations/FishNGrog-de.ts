@@ -19,8 +19,8 @@
         <translation>UI-Vorlage</translation>
     </message>
     <message>
-        <source>Hello Sailors</source>
-        <translation>Hallo Matrosen</translation>
+        <source>Hello Sailors!!</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

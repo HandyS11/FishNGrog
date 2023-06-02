@@ -27,5 +27,5 @@ Create a Sailfish app using Qt to experiment this technologie and os.
    
 ## ✍️ Credits 
 
-* Author: [**Mathis Ribemont**](https://github.com/TEDDAC))
+* Author: [**Mathis Ribemont**](https://github.com/TEDDAC)
 * Author: [**Valetin Clergue**](https://github.com/HandyS11)
