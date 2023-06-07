@@ -5,31 +5,24 @@ Page {
     id: page
     allowedOrientations: Orientation.All
 
-    SilicaFlickable {
+    SilicaListView {
+        id: listView
+        model: 20
         anchors.fill: parent
-        contentHeight: column.height
-
-        PullDownMenu {
-            MenuItem {
-                text: qsTr("Show Page 2")
-                onClicked: pageStack.animatorPush(Qt.resolvedUrl("DetailPage.qml"))
-            }
+        header: PageHeader {
+            title: qsTr("FishNGrog")
         }
+        delegate: BackgroundItem {
+            id: delegate
 
-        Column {
-            id: column
-            width: page.width
-            spacing: Theme.paddingLarge
-
-            PageHeader {
-                title: qsTr("Master page")
-            }
             Label {
                 x: Theme.horizontalPageMargin
-                text: qsTr("Hello Sailors!!")
-                color: Theme.secondaryHighlightColor
-                font.pixelSize: Theme.fontSizeExtraLarge
+                text: qsTr("Poussecaille")
+                anchors.verticalCenter: parent.verticalCenter
+                color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
             }
+            onClicked: console.log("Clicked " + index)
         }
+        VerticalScrollDecorator {}
     }
 }
