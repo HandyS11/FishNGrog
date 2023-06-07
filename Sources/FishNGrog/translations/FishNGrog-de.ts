@@ -9,29 +9,25 @@
     </message>
 </context>
 <context>
-    <name>FirstPage</name>
+    <name>DetailPage</name>
     <message>
-        <source>Show Page 2</source>
-        <translation>Zur Seite 2</translation>
-    </message>
-    <message>
-        <source>UI Template</source>
-        <translation>UI-Vorlage</translation>
-    </message>
-    <message>
-        <source>Hello Sailors!!</source>
+        <source>Detail page</source>
         <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>SecondPage</name>
-    <message>
-        <source>Nested Page</source>
-        <translation>Unterseite</translation>
     </message>
     <message>
         <source>Item</source>
-        <translation>Element</translation>
+        <translation type="unfinished">Element</translation>
+    </message>
+</context>
+<context>
+    <name>MasterPage</name>
+    <message>
+        <source>FishNGrog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Poussecaille</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
