@@ -17,7 +17,8 @@ CONFIG += sailfishapp
 SOURCES += src/FishNGrog.cpp \
     src/fish.cpp \
     src/fishlist.cpp \
-    src/fishmodel.cpp
+    src/fishmodel.cpp \
+    src/stub.cpp
 
 DISTFILES += qml/FishNGrog.qml \
     qml/cover/CoverPage.qml \
@@ -43,6 +44,8 @@ CONFIG += sailfishapp_i18n
 TRANSLATIONS += translations/FishNGrog-de.ts
 
 HEADERS += \
+    src/enums.h \
     src/fish.h \
     src/fishlist.h \
-    src/fishmodel.h
+    src/fishmodel.h \
+    src/stub.h

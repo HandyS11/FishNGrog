@@ -6,8 +6,6 @@
 
 #include "fish.h"
 
-using namespace std;
-
 class FishList : public QObject
 {
     Q_OBJECT
