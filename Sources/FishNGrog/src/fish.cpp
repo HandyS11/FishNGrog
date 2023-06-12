@@ -15,6 +15,10 @@ Fish::Fish(QString& name, bool& isTrophy, int& price,
       m_location(location)
 { }
 
+Fish::Fish()
+    :QObject(nullptr), m_name("Jérôme")
+{}
+
 QString Fish::name() const
 {
     return m_name;
