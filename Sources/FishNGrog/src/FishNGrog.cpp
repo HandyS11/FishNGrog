@@ -3,6 +3,7 @@
 #endif
 
 #include <sailfishapp.h>
+#include "fish.h"
 
 int main(int argc, char *argv[])
 {
@@ -16,5 +17,6 @@ int main(int argc, char *argv[])
     //
     // To display the view, call "show()" (will show fullscreen on device).
 
+    qmlRegisterType<Fish>("pesces",1,0,"Fish");
     return SailfishApp::main(argc, argv);
 }

@@ -1,9 +1,9 @@
 #include "fish.h"
 
-Fish::Fish(QString& name, bool& isTrophy, int& price,
-           Type& type, Quality& quality, Cookness& cookness,
-           Bait& bait, Location& location,
-           QObject *parent)     // ??
+Fish::Fish(QString name, bool isTrophy, int price,
+           FType type, Quality quality, Cookness cookness,
+           Bait bait, Location location,
+           QObject *parent)
     : QObject(parent),
       m_name(name),
       m_isTrophy(isTrophy),
@@ -14,6 +14,22 @@ Fish::Fish(QString& name, bool& isTrophy, int& price,
       m_bait(bait),
       m_location(location)
 { }
+
+Fish::Fish(const Fish& other)
+    : QObject(other.parent()),
+      m_name(other.m_name),
+      m_isTrophy(other.m_isTrophy),
+      m_price(other.m_price),
+      m_type(other.m_type),
+      m_quality(other.m_quality),
+      m_cookness(other.m_cookness),
+      m_bait(other.m_bait),
+      m_location(other.m_location)
+{ }
+
+Fish::Fish()
+    :QObject(nullptr), m_name("Jérôme")
+{}
 
 QString Fish::name() const
 {
@@ -28,7 +44,7 @@ int Fish::price() const {
     return m_price;
 }
 
-Type Fish::type() const {
+FType Fish::type() const {
     return m_type;
 }
 
@@ -69,7 +85,7 @@ void Fish::setPrice(int price) {
     emit isTrophyChanged(m_price);
 }
 
-void Fish::setType(Type type) {
+void Fish::setType(FType type) {
     if (m_type == type)
         return;
     m_type = type;
