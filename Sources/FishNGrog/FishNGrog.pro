@@ -51,4 +51,4 @@ HEADERS += \
     src/stub.h
 
 RESOURCES += \
-    ressources.qrc
+    resources.qrc
