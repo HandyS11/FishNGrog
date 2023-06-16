@@ -26,6 +26,22 @@
         <source>1,125£</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Bonne qualité</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>180s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Worms</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Snake Island</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MasterPage</name>

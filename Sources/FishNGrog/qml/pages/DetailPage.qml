@@ -27,6 +27,25 @@ Page {
             text: qsTr("1,125£")
             color: Theme.primaryColor
         }
+        Text {
+            id: quality
+            text: qsTr("Bonne qualité")
+            color: Theme.primaryColor
+        }
+        Text {
+            id: cookness
+            text: qsTr("180s")
+            color: Theme.primaryColor
+        }
+        Text {
+            id: bait
+            text: qsTr("Worms")
+            color: Theme.primaryColor
+        }Text {
+            id: location
+            text: qsTr("Snake Island")
+            color: Theme.primaryColor
+        }
     }
 }
 

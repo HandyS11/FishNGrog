@@ -3,7 +3,7 @@ import Sailfish.Silica 1.0
 import "pages"
 
 ApplicationWindow {
-    initialPage: Component { Tester { } }
+    initialPage: Component { MasterPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
     allowedOrientations: defaultAllowedOrientations
 }
