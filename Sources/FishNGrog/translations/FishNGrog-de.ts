@@ -4,28 +4,43 @@
 <context>
     <name>CoverPage</name>
     <message>
+        <location filename="../qml/cover/CoverPage.qml" line="8"/>
         <source>My Cover</source>
-        <translation>Mein Cover</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>DetailPage</name>
     <message>
-        <source>Detail page</source>
+        <location filename="../qml/pages/DetailPage.qml" line="9"/>
+        <source>Wreckers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Item</source>
-        <translation type="unfinished">Element</translation>
+        <location filename="../qml/pages/DetailPage.qml" line="16"/>
+        <source>Lorem ipsum dolor sit amet conjectetur</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DetailPage.qml" line="21"/>
+        <source>Is a Trophy</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DetailPage.qml" line="27"/>
+        <source>1,125£</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MasterPage</name>
     <message>
+        <location filename="../qml/pages/MasterPage.qml" line="13"/>
         <source>FishNGrog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../qml/pages/MasterPage.qml" line="20"/>
         <source>Poussecaille</source>
         <translation type="unfinished"></translation>
     </message>
