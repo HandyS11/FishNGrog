@@ -8,6 +8,14 @@ Page {
         Label {
             text: gege.name
         }
+        Image {
+            id: image
+            source: "/usr/share/FishNGrog/images/gold.png"
+        }
+        Image {
+            id: image2
+            source: "/usr/share/FishNGrog/images/FishNGrog.png"
+        }
     }
 
 }
