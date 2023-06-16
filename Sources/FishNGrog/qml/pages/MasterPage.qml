@@ -21,7 +21,7 @@ Page {
                 anchors.verticalCenter: parent.verticalCenter
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
             }
-            onClicked: console.log("Clicked " + index)
+            onClicked: pageStack.animatorPush(Qt.resolvedUrl("DetailPage.qml"))
         }
         VerticalScrollDecorator {}
     }
