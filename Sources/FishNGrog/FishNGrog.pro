@@ -49,3 +49,6 @@ HEADERS += \
     src/fishlist.h \
     src/fishmodel.h \
     src/stub.h
+
+RESOURCES += \
+    ressources.qrc
