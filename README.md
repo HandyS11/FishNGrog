@@ -31,6 +31,13 @@ Create a Sailfish app using Qt to experiment this technologie and os.
 ```mermaid
 classDiagram
 
+class QObject { }
+QObject <|.. Fish
+QObject <|.. FishList
+
+class QAbstractListModel { }
+QAbstractListModel <|.. FishModel
+
 class Fish {
     +Name : QString
     +IsTrophy : bool
@@ -55,6 +62,18 @@ class FishList {
     #reregisterFish(int index)
 }
 FishList --> "*" Fish : Fish
+
+class FishModel {
+    +FishModel(QObject * parent = nullptr)
+    +rowCount(const QModelIndex &parent)
+}
+FishModel --> "1" FishList : FishList
+
+class Stub {
+    +loadFish()
+}
+Stub --> "*" Fish : Fish
+
 ```
    
 ## ✍️ Credits 
