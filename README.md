@@ -36,7 +36,7 @@ class Fish {
     +/IsTrophy : bool
     +/Price : int
 }
-Fish -> "1" FType : FType
+Fish --> "1" FType : FType
 
 enum FType {
     Splashtails,
