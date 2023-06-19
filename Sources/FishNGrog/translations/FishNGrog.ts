@@ -49,9 +49,5 @@
         <source>FishNGrog</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <source>Poussecaille</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 </TS>

@@ -48,12 +48,26 @@ bool FishModel::append(Fish * fish)
 
 QVariant FishModel::data(const QModelIndex &index, int role) const
 {
-    return m_list->operator[](index.row())->name();
+    Fish* fish = m_list->operator[](index.row());
+    switch(role){
+        case RName:
+            return fish->name();
+            break;
+        default:
+            return QVariant::fromValue(fish);
+            break;
+    }
+
    // return QVariant::fromValue(m_list->operator[](index.row()));
 }
 
 QHash<int, QByteArray> FishModel::roleNames() const
 {
+    QHash<int, QByteArray> h;
+    h[RDisplay] = "display";
+    h[RName] = "name";
+    h[RFull] = "full";
 
+    return h;
 }
 

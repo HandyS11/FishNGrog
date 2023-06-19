@@ -9,10 +9,12 @@
 class FishModel : public QAbstractListModel
 {
     Q_OBJECT
-    FishList * m_list;
+    FishList * m_list = nullptr;
 public:
     FishModel(QObject * parent = nullptr);
     Q_INVOKABLE void setList(FishList * list);
+
+    enum Roles { RDisplay = Qt::UserRole+1, RName , RFull} ;
 public:
     virtual int rowCount(const QModelIndex &parent) const override;
     int rowCount() const;
@@ -20,8 +22,8 @@ public:
 
     // QAbstractItemModel interface
 public:
-    QVariant data(const QModelIndex &index, int role) const;
-    QHash<int, QByteArray> roleNames() const;
+    QVariant data(const QModelIndex &index, int role) const override;
+    QHash<int, QByteArray> roleNames() const override;
 };
 
 #endif // FISHMODEL_H

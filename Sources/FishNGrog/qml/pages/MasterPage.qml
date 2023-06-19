@@ -8,14 +8,14 @@ Page {
 
     SilicaListView {
         id: listView
-        model: FishModel {
+        model: fishModel
 
-        }
-
+        /*
         Component.onCompleted: {
             model.setList(fishList)
             console.log(fishList)
         }
+        */
 
         anchors.fill: parent
         header: PageHeader {
@@ -26,7 +26,7 @@ Page {
 
             Label {
                 x: Theme.horizontalPageMargin
-                text: qsTr("Poussecaille")
+                text: name
                 anchors.verticalCenter: parent.verticalCenter
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
             }

@@ -8,11 +8,12 @@
 #include "fishlist.h"
 #include "stub.h"
 
-FishModel* stub_fish(){
-    FishModel * list = new FishModel;
+FishList* stub_fish(){
+
+    FishList * list = new FishList{};
 
     for (auto fish: Stub().loadFish()){
-        list->append(new Fish(fish));
+        list->push_back(new Fish(fish));
     }
 
     return list;
@@ -26,18 +27,20 @@ int main(int argc, char *argv[])
     // On a besoin d'une vue pour injecter des choses dedans
     QScopedPointer<QQuickView> view(SailfishApp::createView());
 
+    ;
+
 
     qmlRegisterType<Fish>("FishLib",1,0,"Fish");
 
     qmlRegisterType<FishModel>("FishLib",1,0,"FishModel");
     qmlRegisterUncreatableType<FishList>("FishLib",1,0,"FishList","Le métier crée les données, pas la vue");
 
-    QScopedPointer<FishModel> fishModel(stub_fish());
+    FishModel fishModel;
+    fishModel.setList(stub_fish());
+    view->rootContext()->setContextProperty("fishModel", &fishModel);
 
     // On relie la vue au fichier QML
-    view->setSource(QUrl::fromLocalFile("MasterPage.qml"));
-
-    view->rootContext()->setContextProperty("fishModel", fishModel.data());
+    view->setSource(SailfishApp::pathToMainQml());
 
     // On rend la vue affichable
     view->show();

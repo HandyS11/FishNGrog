@@ -59,10 +59,5 @@
         <source>FishNGrog</source>
         <translation type="unfinished"></translation>
     </message>
-    <message>
-        <location filename="../qml/pages/MasterPage.qml" line="29"/>
-        <source>Poussecaille</source>
-        <translation type="unfinished"></translation>
-    </message>
 </context>
 </TS>
