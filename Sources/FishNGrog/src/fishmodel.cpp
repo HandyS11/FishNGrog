@@ -66,8 +66,15 @@ QHash<int, QByteArray> FishModel::roleNames() const
     QHash<int, QByteArray> h;
     h[RDisplay] = "display";
     h[RName] = "name";
-    h[RFull] = "full";
+    h[RIsTrophy] = "isTrophy";
+    h[RPrice] = "price";
+    h[RType] = "type";
+    h[RQuality] = "quality";
+    h[RCookness] = "cookness";
+    h[RBait] = "bait";
+    h[RLocation] = "location";
 
+    h[RFull] = "full";
     return h;
 }
 

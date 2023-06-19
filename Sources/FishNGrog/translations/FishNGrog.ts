@@ -11,35 +11,7 @@
 <context>
     <name>DetailPage</name>
     <message>
-        <source>Wreckers</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Lorem ipsum dolor sit amet conjectetur</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Is a Trophy</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>1,125£</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Bonne qualité</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>180s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Worms</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Snake Island</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

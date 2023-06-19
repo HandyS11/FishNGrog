@@ -30,7 +30,8 @@ Page {
                 anchors.verticalCenter: parent.verticalCenter
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
             }
-            onClicked: pageStack.animatorPush(Qt.resolvedUrl("DetailPage.qml"))
+            onClicked: pageStack.animatorPush(Qt.resolvedUrl("DetailPage.qml"), {fish: full })
+            // model fait référence à l'item passé au delegate
         }
         VerticalScrollDecorator {}
     }

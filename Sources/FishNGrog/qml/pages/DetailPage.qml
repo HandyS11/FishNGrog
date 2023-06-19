@@ -1,31 +1,31 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import FishLib 1.0
 
 Page {
     id: page
     allowedOrientations: Orientation.All
+
+    property Fish fish
+
     PageHeader {
         id: header
-        title: qsTr("Wreckers")
+        title: fish.name
     }
 
     Column {
+        Component.onCompleted: console.log(fish)
         anchors.top: header.bottom // permet d'ancrer le haut de la colonne sur le bas du header
-        Text {
-            id: description
-            text: qsTr("Lorem ipsum dolor sit amet conjectetur")
-            color: Theme.primaryColor
-        }
         Text {
             id: isTrophy
             text: qsTr("Is a Trophy")
-            visible: true
+            visible: fish.isTrophy
             color: Theme.primaryColor
         }
         Row {
             Text {
                 id: price
-                text: qsTr("1,125£")
+                text: fish.price
                 color: Theme.primaryColor
             }
             Image {
@@ -35,21 +35,22 @@ Page {
         }
         Text {
             id: quality
-            text: qsTr("Bonne qualité")
+            text: quality
             color: Theme.primaryColor
         }
         Text {
             id: cookness
-            text: qsTr("180s")
+            text: fish.cookness
             color: Theme.primaryColor
         }
         Text {
             id: bait
-            text: qsTr("Worms")
+            text: fish.bait
             color: Theme.primaryColor
-        }Text {
+        }
+        Text {
             id: location
-            text: qsTr("Snake Island")
+            text: fish.location
             color: Theme.primaryColor
         }
     }

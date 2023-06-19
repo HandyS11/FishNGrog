@@ -14,7 +14,18 @@ public:
     FishModel(QObject * parent = nullptr);
     Q_INVOKABLE void setList(FishList * list);
 
-    enum Roles { RDisplay = Qt::UserRole+1, RName , RFull} ;
+    enum Roles {
+        RDisplay = Qt::UserRole+1,
+        RName,
+        RIsTrophy,
+        RPrice,
+        RType,
+        RQuality,
+        RCookness,
+        RBait,
+        RLocation,
+        RFull
+    } ;
 public:
     virtual int rowCount(const QModelIndex &parent) const override;
     int rowCount() const;
