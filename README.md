@@ -56,13 +56,6 @@ class FishList {
 }
 FishList --> "*" Fish : Fish
 ```
-
-
-enum Quality { Base, Common, Uncommon, Rare, Night };
-enum Cookness { Raw, Undercooked, Cooked, Burnt };
-enum Bait { None, Leeches, Earthworms, Grubs };
-enum Location { Everywhere, Lakes, Isles_Islands, South, The_Shores_of_Plenty, The_Wilds, The_Devils_Roar, Forteress, Shipwrecks, Storms, The_Ancient_Isles};
-
    
 ## ✍️ Credits 
 

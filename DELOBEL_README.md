@@ -3,8 +3,7 @@
 ## Auteurs
 
 ```mermaid
-pie work
-    title Répartition du travail
+pie title Répartition du travail
     "Mathis Ribémont" : 40
     "Valentin Clergue" : 60
 ```
