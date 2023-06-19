@@ -55,12 +55,12 @@
 <context>
     <name>MasterPage</name>
     <message>
-        <location filename="../qml/pages/MasterPage.qml" line="13"/>
+        <location filename="../qml/pages/MasterPage.qml" line="22"/>
         <source>FishNGrog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/MasterPage.qml" line="20"/>
+        <location filename="../qml/pages/MasterPage.qml" line="29"/>
         <source>Poussecaille</source>
         <translation type="unfinished"></translation>
     </message>

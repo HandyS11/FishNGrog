@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import FishLib 1.0
 
 Page {
     id: page
@@ -7,7 +8,15 @@ Page {
 
     SilicaListView {
         id: listView
-        model: 20
+        model: FishModel {
+
+        }
+
+        Component.onCompleted: {
+            model.setList(fishList)
+            console.log(fishList)
+        }
+
         anchors.fill: parent
         header: PageHeader {
             title: qsTr("FishNGrog")

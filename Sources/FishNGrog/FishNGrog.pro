@@ -24,7 +24,6 @@ DISTFILES += qml/FishNGrog.qml \
     qml/cover/CoverPage.qml \
     qml/pages/DetailPage.qml \
     qml/pages/MasterPage.qml \
-    qml/pages/Tester.qml \
     rpm/FishNGrog.changes.in \
     rpm/FishNGrog.changes.run.in \
     rpm/FishNGrog.spec \

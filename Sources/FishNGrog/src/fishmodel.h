@@ -15,6 +15,13 @@ public:
     Q_INVOKABLE void setList(FishList * list);
 public:
     virtual int rowCount(const QModelIndex &parent) const override;
+    int rowCount() const;
+    bool append(Fish * fish);
+
+    // QAbstractItemModel interface
+public:
+    QVariant data(const QModelIndex &index, int role) const;
+    QHash<int, QByteArray> roleNames() const;
 };
 
 #endif // FISHMODEL_H

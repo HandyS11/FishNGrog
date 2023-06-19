@@ -1,4 +1,4 @@
-#include "fishmodel.h"
+﻿#include "fishmodel.h"
 
 FishModel::FishModel(QObject *parent)
     : QAbstractListModel(parent), m_list(nullptr)
@@ -31,6 +31,29 @@ void FishModel::setList(FishList *list)
 
 int FishModel::rowCount(const QModelIndex &) const
 {
+    return rowCount();
+}
+
+int FishModel::rowCount() const
+{
     return m_list ? m_list->size() : 0;
+}
+
+bool FishModel::append(Fish * fish)
+{
+    beginInsertRows(QModelIndex(), rowCount(), rowCount());
+    m_list->push_back(fish);
+    endInsertRows();
+}
+
+QVariant FishModel::data(const QModelIndex &index, int role) const
+{
+    return m_list->operator[](index.row())->name();
+   // return QVariant::fromValue(m_list->operator[](index.row()));
+}
+
+QHash<int, QByteArray> FishModel::roleNames() const
+{
+
 }
 
