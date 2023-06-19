@@ -49,3 +49,11 @@ HEADERS += \
     src/fishlist.h \
     src/fishmodel.h \
     src/stub.h
+
+database.files = images
+database.path = /usr/share/$${TARGET}
+
+RESOURCES += \
+    resources.qrc
+
+INSTALLS += database
