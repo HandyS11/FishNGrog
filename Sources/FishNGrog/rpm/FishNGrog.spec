@@ -1,7 +1,7 @@
 Name:       FishNGrog
 
 Summary:    FishNGrog
-Version:    0.5
+Version:    0.1
 Release:    1
 License:    LICENSE
 URL:        http://example.org/
@@ -14,7 +14,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
-Short description of my Sailfish OS Application
+A basic master detail to display Sea of Thieves fish.
 
 
 %prep
