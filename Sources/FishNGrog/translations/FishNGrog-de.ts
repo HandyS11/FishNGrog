@@ -27,27 +27,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="27"/>
+        <location filename="../qml/pages/DetailPage.qml" line="28"/>
         <source>1,125£</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="32"/>
+        <location filename="../qml/pages/DetailPage.qml" line="38"/>
         <source>Bonne qualité</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="37"/>
+        <location filename="../qml/pages/DetailPage.qml" line="43"/>
         <source>180s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="42"/>
+        <location filename="../qml/pages/DetailPage.qml" line="48"/>
         <source>Worms</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="46"/>
+        <location filename="../qml/pages/DetailPage.qml" line="52"/>
         <source>Snake Island</source>
         <translation type="unfinished"></translation>
     </message>
