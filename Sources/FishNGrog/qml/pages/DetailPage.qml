@@ -22,10 +22,16 @@ Page {
             visible: true
             color: Theme.primaryColor
         }
-        Text {
-            id: price
-            text: qsTr("1,125£")
-            color: Theme.primaryColor
+        Row {
+            Text {
+                id: price
+                text: qsTr("1,125£")
+                color: Theme.primaryColor
+            }
+            Image {
+                id: priceImage
+                source: "/usr/share/FishNGrog/images/gold.png"
+            }
         }
         Text {
             id: quality
