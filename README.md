@@ -32,24 +32,29 @@ Create a Sailfish app using Qt to experiment this technologie and os.
 classDiagram
 
 class Fish {
-    +/Name : QString
-    +/IsTrophy : bool
-    +/Price : int
+    +Name : QString
+    +IsTrophy : bool
+    +Price : int
+    +FType : FType
+    +Quality : Quality
+    +Cookness
+    +Bait
+    +Location
+    +Fish(QString name, bool isTrophy, int price, FType type, Quality quality, Cookness cookness, Bait bait, Location location)
+    + Fish(const Fish& other)
+    + Fish()
 }
-Fish --> "1" FType : FType
 
-enum FType {
-    Splashtails,
-    Pondies,
-    Islehoppers,
-    Ancientscales,
-    Plentifins,
-    Wildsplashed,
-    Devilfish,
-    Battlegills,
-    Wreckers,
-    Stormfish
+class FishList {
+    +FishList(QObject *parent = nullptr)
+    +push_back(Fish* fish)
+    +remove(int index)
+    +insert(int index, Fish* fish)
+    #registerFish(int index)
+    #unregisterFish(int index)
+    #reregisterFish(int index)
 }
+FishList --> "*" Fish : Fish
 ```
 
 

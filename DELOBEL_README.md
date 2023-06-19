@@ -2,8 +2,12 @@
 
 ## Auteurs
 
-- **Mathis Ribémont** : 40%
-- **Valentin Clergue** : 60%
+```mermaid
+pie work
+    title Répartition du travail
+    "Mathis Ribémont" : 40
+    "Valentin Clergue" : 60
+```
 
 ## Descriptif
 
