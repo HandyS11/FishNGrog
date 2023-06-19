@@ -5,6 +5,7 @@
 Create a Sailfish app using Qt to experiment this technologie and os. 
 
 - Create a master detail
+- Use [**Sailfish**](https://docs.sailfishos.org/Tools/Sailfish_SDK/) features such as pull down menu.
 
 ## 🛠 Languages & tools
 
@@ -23,7 +24,7 @@ Create a Sailfish app using Qt to experiment this technologie and os.
 
 | Master | Detail |
 | --- | --- |
-| | |
+| ![](Documentions/screens/master.png) | ![](Documentation/screens/detail.png) |
    
 ## ✍️ Credits 
 
