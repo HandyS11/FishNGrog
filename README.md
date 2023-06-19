@@ -25,6 +25,39 @@ Create a Sailfish app using Qt to experiment this technologie and os.
 | Master | Detail |
 | --- | --- |
 | ![](Documentions/screens/master.png) | ![](Documentation/screens/detail.png) |
+
+## ⚙️ Architecture
+
+```mermaid
+classDiagram
+
+class Fish {
+    +/Name : QString
+    +/IsTrophy : bool
+    +/Price : int
+}
+Fish -> "1" FType : FType
+
+enum FType {
+    Splashtails,
+    Pondies,
+    Islehoppers,
+    Ancientscales,
+    Plentifins,
+    Wildsplashed,
+    Devilfish,
+    Battlegills,
+    Wreckers,
+    Stormfish
+}
+```
+
+
+enum Quality { Base, Common, Uncommon, Rare, Night };
+enum Cookness { Raw, Undercooked, Cooked, Burnt };
+enum Bait { None, Leeches, Earthworms, Grubs };
+enum Location { Everywhere, Lakes, Isles_Islands, South, The_Shores_of_Plenty, The_Wilds, The_Devils_Roar, Forteress, Shipwrecks, Storms, The_Ancient_Isles};
+
    
 ## ✍️ Credits 
 
