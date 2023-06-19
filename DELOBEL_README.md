@@ -22,17 +22,23 @@ Il suffit de lancer l'application sans tout autre configuration.
 
 ### QtFish
 
+//TODO: MATHIS ALED
+
 Exemple:
 
 *WifiScanner utilise la couche QtNetwork pour avoir scanner le Wifi et récupérer les propriétés réseau*
 
 ### QObject avec QProperties
 
+//TODO: MATHIS ALED
+
 Exemple:
 
 *Chaque réseau Wifi est une QTarget, un QObject avec plusieurs propriétés. La modification d'une des propriétés entraîne son rafraîchissement dans les listes.*
 
 ### ListView partiellement éditable + Modèle C++ + Tri
+
+//TODO: MATHIS ALED
 
 Exemple:
 
@@ -41,6 +47,8 @@ Exemple:
 *La liste est triée par défaut par puissance de réception. Mais le critère de tri peut être modifié dans les options.*
 
 ### PullDownMenu
+
+//TODO: MATHIS ALED
 
 Exemple:
 
@@ -52,11 +60,15 @@ Un clic sur un réseau ouvre la page de detail.
 
 ## Detail: Modif + QValidator
 
+//TODO: MATHIS ALED
+
 Exemple:
 
 *Le nom du réseau est éditable. Un QValidator permet de s'assuer que le nom choisi ne contient pas d'espaces.*
 
 ### Menu Contextuel
+
+//TODO: MATHIS ALED
 
 Exemple:
 
@@ -64,11 +76,15 @@ Exemple:
 
 ### Remorse
 
+//TODO: MATHIS ALED
+
 Exemple:
 
 *L'item précédent utilise une RemorseBar.*
 
 ### Options + Sauvegarde (QSettings)
+
+//TODO: MATHIS ALED
 
 Exemple:
 
