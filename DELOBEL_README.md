@@ -4,8 +4,8 @@
 
 ```mermaid
 pie title Répartition du travail
-    "Mathis Ribémont" : 40
-    "Valentin Clergue" : 60
+    "Mathis Ribémont" : 50
+    "Valentin Clergue" : 50
 ```
 
 ## Descriptif
@@ -22,70 +22,41 @@ Il suffit de lancer l'application sans tout autre configuration.
 
 ### QtFish
 
-//TODO: MATHIS ALED
-
-Exemple:
-
-*WifiScanner utilise la couche QtNetwork pour avoir scanner le Wifi et récupérer les propriétés réseau*
-
 ### QObject avec QProperties
 
-//TODO: MATHIS ALED
+QFish est un QObject, est chaque attribut est une QProperty, avec son getter, son setter, et son signal.
 
-Exemple:
+### FishModel
 
-*Chaque réseau Wifi est une QTarget, un QObject avec plusieurs propriétés. La modification d'une des propriétés entraîne son rafraîchissement dans les listes.*
+Pour l'affichage de la liste, nous avons utilisé un model qui stocke la liste de poisson, pour les afficher dans un délégué.
 
-### ListView partiellement éditable + Modèle C++ + Tri
+### Cas des ENUMS
 
-//TODO: MATHIS ALED
+Si on utilise un model pour les fish, comme c'est le cas dans la liste, on pourrait grâce à Qt récupérer le nom de la valeur d'une enum. Le problème c'est que sur la page de détail, nous utilisons les fish directement. Pour résoudre ce problème, nous avons c'est les "propertyS", qui sont les équivalent QString des propriété en enum. C'est à dire que dans le getter, on retourne une QString codée en dur en fonction de la valeur de l'attribut initial.
 
-Exemple:
+```cpp
+FType m_type;
 
-*La liste des réseau s'appuie sur un modèle C++ qui contient une liste de QTarget. Elle n'est pas éditable mais on peut la reconstruire totalement quand on relance un scan. On peut néanmoins changer le nom d'un réseau (par défaut son SSID), ainsi que la puissance de réception (changée par le scan).*
+Q_PROPERTY(FType type           READ type       WRITE setType       NOTIFY typeChanged)
+Q_PROPERTY(QString typeS        READ typeS      NOTIFY typeChanged)
 
-*La liste est triée par défaut par puissance de réception. Mais le critère de tri peut être modifié dans les options.*
+FType Fish::type() const {
+    return m_type;
+}
 
-### PullDownMenu
-
-//TODO: MATHIS ALED
-
-Exemple:
-
-*Un PullDownMenu est présent dans la page de la liste des réseaux, il permet de relancer un scan.*
-
-### Clic
-
-Un clic sur un réseau ouvre la page de detail.
-
-## Detail: Modif + QValidator
-
-//TODO: MATHIS ALED
-
-Exemple:
-
-*Le nom du réseau est éditable. Un QValidator permet de s'assuer que le nom choisi ne contient pas d'espaces.*
-
-### Menu Contextuel
-
-//TODO: MATHIS ALED
-
-Exemple:
-
-*Un clic long affiche un menu contextuel permettant d'oublier un réseau.*
-
-### Remorse
-
-//TODO: MATHIS ALED
-
-Exemple:
-
-*L'item précédent utilise une RemorseBar.*
-
-### Options + Sauvegarde (QSettings)
-
-//TODO: MATHIS ALED
-
-Exemple:
-
-*Une page d'options permet de modifier le critère de tri. Nous utilisons QSettings pour le sauvegarder d'une exécution à l'autre.*
+QString Fish::typeS() const
+{
+    switch (m_type) {
+        case Splashtails:
+            return QString("Splashtail");
+        break;
+        case Pondies:
+            return QString("Pondie");
+        break;
+        ...
+        default:
+            return QString("Unknown");
+        break;
+    }
+}
+```

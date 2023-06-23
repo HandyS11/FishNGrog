@@ -24,7 +24,7 @@ Create a Sailfish app using Qt to experiment this technologie and os.
 
 | Master | Detail |
 | --- | --- |
-| ![](Documentions/screens/master.png) | ![](Documentation/screens/detail.png) |
+| ![Image du master](Documentations/screens/MasterPage.png) | ![Image du détail](Documentations/screens/DetailPage.png) |
 
 ## ⚙️ Architecture
 
