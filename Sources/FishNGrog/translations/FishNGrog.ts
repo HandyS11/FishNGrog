@@ -14,6 +14,26 @@
         <source>Is a Trophy</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Quality: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cookness: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bait: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Location: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Type: </source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MasterPage</name>

@@ -34,23 +34,28 @@ Page {
             }
         }
         Text {
+            id: type
+            text: qsTr("Type: ") + fish.typeS
+            color: Theme.primaryColor
+        }
+        Text {
             id: quality
-            text: quality
+            text: qsTr("Quality: ") + fish.qualityS
             color: Theme.primaryColor
         }
         Text {
             id: cookness
-            text: fish.cookness
+            text: qsTr("Cookness: ") + fish.cooknessS
             color: Theme.primaryColor
         }
         Text {
             id: bait
-            text: fish.bait
+            text: qsTr("Bait: ") + fish.baitS
             color: Theme.primaryColor
         }
         Text {
             id: location
-            text: fish.location
+            text: qsTr("Location: ") + fish.locationS
             color: Theme.primaryColor
         }
     }

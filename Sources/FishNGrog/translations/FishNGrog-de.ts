@@ -16,6 +16,31 @@
         <source>Is a Trophy</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../qml/pages/DetailPage.qml" line="38"/>
+        <source>Type: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DetailPage.qml" line="43"/>
+        <source>Quality: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DetailPage.qml" line="48"/>
+        <source>Cookness: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DetailPage.qml" line="53"/>
+        <source>Bait: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DetailPage.qml" line="58"/>
+        <source>Location: </source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MasterPage</name>

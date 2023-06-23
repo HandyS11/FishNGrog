@@ -4,7 +4,7 @@
 
 #include <sailfishapp.h>
 #include "fish.h"
-#include "fishmodel.h"
+#include "fishlistmodel.h"
 #include "fishlist.h"
 #include "stub.h"
 
@@ -27,15 +27,13 @@ int main(int argc, char *argv[])
     // On a besoin d'une vue pour injecter des choses dedans
     QScopedPointer<QQuickView> view(SailfishApp::createView());
 
-    ;
-
 
     qmlRegisterType<Fish>("FishLib",1,0,"Fish");
 
-    qmlRegisterType<FishModel>("FishLib",1,0,"FishModel");
+    qmlRegisterType<FishListModel>("FishLib",1,0,"FishListModel");
     qmlRegisterUncreatableType<FishList>("FishLib",1,0,"FishList","Le métier crée les données, pas la vue");
 
-    FishModel fishModel;
+    FishListModel fishModel;
     fishModel.setList(stub_fish());
     view->rootContext()->setContextProperty("fishModel", &fishModel);
 

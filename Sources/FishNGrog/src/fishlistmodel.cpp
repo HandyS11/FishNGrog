@@ -1,10 +1,10 @@
-﻿#include "fishmodel.h"
+﻿#include "fishlistmodel.h"
 
-FishModel::FishModel(QObject *parent)
+FishListModel::FishListModel(QObject *parent)
     : QAbstractListModel(parent), m_list(nullptr)
 { }
 
-void FishModel::setList(FishList *list)
+void FishListModel::setList(FishList *list)
 {
     beginResetModel();
 
@@ -22,31 +22,31 @@ void FishModel::setList(FishList *list)
         } );
         connect(m_list, &FishList::itemChanged, [=](int index){
             auto row = this->index(index);
-            emit FishModel::dataChanged(row, row);
+            emit FishListModel::dataChanged(row, row);
         });
     }
     endResetModel();
 }
 
 
-int FishModel::rowCount(const QModelIndex &) const
+int FishListModel::rowCount(const QModelIndex &) const
 {
     return rowCount();
 }
 
-int FishModel::rowCount() const
+int FishListModel::rowCount() const
 {
     return m_list ? m_list->size() : 0;
 }
 
-bool FishModel::append(Fish * fish)
+bool FishListModel::append(Fish * fish)
 {
     beginInsertRows(QModelIndex(), rowCount(), rowCount());
     m_list->push_back(fish);
     endInsertRows();
 }
 
-QVariant FishModel::data(const QModelIndex &index, int role) const
+QVariant FishListModel::data(const QModelIndex &index, int role) const
 {
     Fish* fish = m_list->operator[](index.row());
     switch(role){
@@ -61,7 +61,7 @@ QVariant FishModel::data(const QModelIndex &index, int role) const
    // return QVariant::fromValue(m_list->operator[](index.row()));
 }
 
-QHash<int, QByteArray> FishModel::roleNames() const
+QHash<int, QByteArray> FishListModel::roleNames() const
 {
     QHash<int, QByteArray> h;
     h[RDisplay] = "display";

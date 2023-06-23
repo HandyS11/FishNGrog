@@ -1,17 +1,17 @@
-#ifndef FISHMODEL_H
-#define FISHMODEL_H
+#ifndef FISHLISTMODEL_H
+#define FISHLISTMODEL_H
 
 #include <QObject>
 #include <QAbstractListModel>
 
 #include "fishlist.h"
 
-class FishModel : public QAbstractListModel
+class FishListModel : public QAbstractListModel
 {
     Q_OBJECT
     FishList * m_list = nullptr;
 public:
-    FishModel(QObject * parent = nullptr);
+    FishListModel(QObject * parent = nullptr);
     Q_INVOKABLE void setList(FishList * list);
 
     enum Roles {
@@ -37,4 +37,4 @@ public:
     QHash<int, QByteArray> roleNames() const override;
 };
 
-#endif // FISHMODEL_H
+#endif // FISHLISTMODEL_H
