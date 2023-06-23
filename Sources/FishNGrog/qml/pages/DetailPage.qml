@@ -16,6 +16,10 @@ Page {
     Column {
         Component.onCompleted: console.log(fish)
         anchors.top: header.bottom // permet d'ancrer le haut de la colonne sur le bas du header
+        Image {
+            id: fishImage
+            source: "/usr/share/FishNGrog/images/" + fish.typeS + ".png"
+        }
         Text {
             id: isTrophy
             text: qsTr("Is a Trophy")

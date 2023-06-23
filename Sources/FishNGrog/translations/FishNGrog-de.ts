@@ -12,32 +12,32 @@
 <context>
     <name>DetailPage</name>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="21"/>
+        <location filename="../qml/pages/DetailPage.qml" line="25"/>
         <source>Is a Trophy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="38"/>
+        <location filename="../qml/pages/DetailPage.qml" line="42"/>
         <source>Type: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="43"/>
+        <location filename="../qml/pages/DetailPage.qml" line="47"/>
         <source>Quality: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="48"/>
+        <location filename="../qml/pages/DetailPage.qml" line="52"/>
         <source>Cookness: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="53"/>
+        <location filename="../qml/pages/DetailPage.qml" line="57"/>
         <source>Bait: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="58"/>
+        <location filename="../qml/pages/DetailPage.qml" line="62"/>
         <source>Location: </source>
         <translation type="unfinished"></translation>
     </message>

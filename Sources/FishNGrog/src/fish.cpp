@@ -52,31 +52,31 @@ QString Fish::typeS() const
 {
     switch (m_type) {
         case Splashtails:
-            return QString("Splashtails");
+            return QString("Splashtail");
         break;
         case Pondies:
-            return QString("Pondies");
+            return QString("Pondie");
         break;
         case Islehoppers:
-            return QString("Islehoppers");
+            return QString("Islehopper");
         break;
         case Ancientscales:
-            return QString("Ancientscales");
+            return QString("Ancientscale");
         break;
         case Plentifins:
-            return QString("Plentifins");
+            return QString("Plentifin");
         break;
         case Wildsplashed:
-            return QString("Wildsplashed");
+            return QString("Wildsplash");
         break;
         case Devilfish:
             return QString("Devilfish");
         break;
         case Battlegills:
-            return QString("Battlegills");
+            return QString("Battlegill");
         break;
         case Wreckers:
-            return QString("Wreckers");
+            return QString("Wrecker");
         break;
         case Stormfish:
             return QString("Stormfish");
