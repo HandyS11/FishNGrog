@@ -12,56 +12,41 @@
 <context>
     <name>DetailPage</name>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="9"/>
-        <source>Wreckers</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/DetailPage.qml" line="16"/>
-        <source>Lorem ipsum dolor sit amet conjectetur</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/pages/DetailPage.qml" line="21"/>
         <source>Is a Trophy</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="28"/>
-        <source>1,125£</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../qml/pages/DetailPage.qml" line="38"/>
-        <source>Bonne qualité</source>
+        <source>Type: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/DetailPage.qml" line="43"/>
-        <source>180s</source>
+        <source>Quality: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/DetailPage.qml" line="48"/>
-        <source>Worms</source>
+        <source>Cookness: </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/DetailPage.qml" line="52"/>
-        <source>Snake Island</source>
+        <location filename="../qml/pages/DetailPage.qml" line="53"/>
+        <source>Bait: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/DetailPage.qml" line="58"/>
+        <source>Location: </source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MasterPage</name>
     <message>
-        <location filename="../qml/pages/MasterPage.qml" line="13"/>
+        <location filename="../qml/pages/MasterPage.qml" line="22"/>
         <source>FishNGrog</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/MasterPage.qml" line="20"/>
-        <source>Poussecaille</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

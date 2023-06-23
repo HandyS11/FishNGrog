@@ -17,14 +17,13 @@ CONFIG += sailfishapp
 SOURCES += src/FishNGrog.cpp \
     src/fish.cpp \
     src/fishlist.cpp \
-    src/fishmodel.cpp \
+    src/fishlistmodel.cpp \
     src/stub.cpp
 
 DISTFILES += qml/FishNGrog.qml \
     qml/cover/CoverPage.qml \
     qml/pages/DetailPage.qml \
     qml/pages/MasterPage.qml \
-    qml/pages/Tester.qml \
     rpm/FishNGrog.changes.in \
     rpm/FishNGrog.changes.run.in \
     rpm/FishNGrog.spec \
@@ -47,7 +46,7 @@ HEADERS += \
     src/enums.h \
     src/fish.h \
     src/fishlist.h \
-    src/fishmodel.h \
+    src/fishlistmodel.h \
     src/stub.h
 
 database.files = images

@@ -4,19 +4,45 @@
 
 #include <sailfishapp.h>
 #include "fish.h"
+#include "fishlistmodel.h"
+#include "fishlist.h"
+#include "stub.h"
+
+FishList* stub_fish(){
+
+    FishList * list = new FishList{};
+
+    for (auto fish: Stub().loadFish()){
+        list->push_back(new Fish(fish));
+    }
+
+    return list;
+}
 
 int main(int argc, char *argv[])
 {
-    // SailfishApp::main() will display "qml/FishNGrog.qml", if you need more
-    // control over initialization, you can use:
-    //
-    //   - SailfishApp::application(int, char *[]) to get the QGuiApplication *
-    //   - SailfishApp::createView() to get a new QQuickView * instance
-    //   - SailfishApp::pathTo(QString) to get a QUrl to a resource file
-    //   - SailfishApp::pathToMainQml() to get a QUrl to the main QML file
-    //
-    // To display the view, call "show()" (will show fullscreen on device).
+    // L'application doit être construite avant toute chose. On lui passe les arguments pour gérer les options
+    QScopedPointer<QGuiApplication> app (SailfishApp::application(argc, argv));
 
-    qmlRegisterType<Fish>("pesces",1,0,"Fish");
-    return SailfishApp::main(argc, argv);
+    // On a besoin d'une vue pour injecter des choses dedans
+    QScopedPointer<QQuickView> view(SailfishApp::createView());
+
+
+    qmlRegisterType<Fish>("FishLib",1,0,"Fish");
+
+    qmlRegisterType<FishListModel>("FishLib",1,0,"FishListModel");
+    qmlRegisterUncreatableType<FishList>("FishLib",1,0,"FishList","Le métier crée les données, pas la vue");
+
+    FishListModel fishModel;
+    fishModel.setList(stub_fish());
+    view->rootContext()->setContextProperty("fishModel", &fishModel);
+
+    // On relie la vue au fichier QML
+    view->setSource(SailfishApp::pathToMainQml());
+
+    // On rend la vue affichable
+    view->show();
+
+    // On donne la main au moteur événementiel
+    return app->exec();
 }

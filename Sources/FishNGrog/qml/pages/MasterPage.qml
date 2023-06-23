@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import FishLib 1.0
 
 Page {
     id: page
@@ -7,7 +8,15 @@ Page {
 
     SilicaListView {
         id: listView
-        model: 20
+        model: fishModel
+
+        /*
+        Component.onCompleted: {
+            model.setList(fishList)
+            console.log(fishList)
+        }
+        */
+
         anchors.fill: parent
         header: PageHeader {
             title: qsTr("FishNGrog")
@@ -17,11 +26,12 @@ Page {
 
             Label {
                 x: Theme.horizontalPageMargin
-                text: qsTr("Poussecaille")
+                text: name
                 anchors.verticalCenter: parent.verticalCenter
                 color: delegate.highlighted ? Theme.highlightColor : Theme.primaryColor
             }
-            onClicked: pageStack.animatorPush(Qt.resolvedUrl("DetailPage.qml"))
+            onClicked: pageStack.animatorPush(Qt.resolvedUrl("DetailPage.qml"), {fish: full })
+            // model fait référence à l'item passé au delegate
         }
         VerticalScrollDecorator {}
     }

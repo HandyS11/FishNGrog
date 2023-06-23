@@ -48,20 +48,152 @@ FType Fish::type() const {
     return m_type;
 }
 
+QString Fish::typeS() const
+{
+    switch (m_type) {
+        case Splashtails:
+            return QString("Splashtails");
+        break;
+        case Pondies:
+            return QString("Pondies");
+        break;
+        case Islehoppers:
+            return QString("Islehoppers");
+        break;
+        case Ancientscales:
+            return QString("Ancientscales");
+        break;
+        case Plentifins:
+            return QString("Plentifins");
+        break;
+        case Wildsplashed:
+            return QString("Wildsplashed");
+        break;
+        case Devilfish:
+            return QString("Devilfish");
+        break;
+        case Battlegills:
+            return QString("Battlegills");
+        break;
+        case Wreckers:
+            return QString("Wreckers");
+        break;
+        case Stormfish:
+            return QString("Stormfish");
+        break;
+        default:
+            return QString("Unknown");
+        break;
+    }
+}
+
 Quality Fish::quality() const {
     return m_quality;
+}
+
+QString Fish::qualityS() const
+{
+    switch (m_quality) {
+        case Common:
+            return QString("Common");
+        break;
+        case Uncommon:
+            return QString("Uncommon");
+        break;
+        case Rare:
+            return QString("Rare");
+        break;
+        case Night:
+            return QString("Night");
+        default:
+            return QString("Base");
+        break;
+    }
 }
 
 Cookness Fish::cookness() const {
     return m_cookness;
 }
 
+QString Fish::cooknessS() const
+{
+    switch (m_cookness) {
+        case Undercooked:
+            return QString("Undercooked");
+        break;
+        case Cooked:
+            return QString("Cooked");
+        break;
+        case Burnt:
+            return QString("Burnt");
+        default:
+            return QString("Raw");
+        break;
+    }
+}
+
 Bait Fish::bait() const {
     return m_bait;
 }
 
+QString Fish::baitS() const
+{
+    switch (m_bait) {
+        case Leeches:
+            return QString("Leeches");
+        break;
+        case Earthworms:
+            return QString("Earthworms");
+        break;
+        case Grubs:
+            return QString("Grubs");
+        default:
+            return QString("None");
+        break;
+    }
+}
+
 Location Fish::location() const {
     return m_location;
+}
+
+QString Fish::locationS() const
+{
+    switch (m_location) {
+        case Lakes:
+            return QString("Lakes");
+        break;
+        case Isles_Islands:
+            return QString("Isles Islands");
+        break;
+        case South:
+            return QString("South");
+        break;
+        case The_Shores_of_Plenty:
+            return QString("The Shores of Plenty");
+        break;
+        case The_Wilds:
+            return QString("The Wilds");
+        break;
+        case The_Devils_Roar:
+            return QString("The Devils Roar");
+        break;
+        case Forteress:
+            return QString("Forteress");
+        break;
+        case Shipwrecks:
+            return QString("Shipwrecks");
+        break;
+        case Storms:
+            return QString("Storms");
+        break;
+        case The_Ancient_Isles:
+            return QString("The Ancient Isles");
+        break;
+        default:
+            return QString("Everywhere");
+        break;
+    }
 }
 
 void Fish::setName(QString name) {

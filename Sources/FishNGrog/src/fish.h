@@ -13,10 +13,15 @@ class Fish : public QObject
     Q_PROPERTY(bool isTrophy        READ isTrophy   WRITE setIsTrophy   NOTIFY isTrophyChanged)
     Q_PROPERTY(int price            READ price      WRITE setPrice      NOTIFY priceChanged)
     Q_PROPERTY(FType type           READ type       WRITE setType       NOTIFY typeChanged)
+    Q_PROPERTY(QString typeS        READ typeS      NOTIFY typeChanged)
     Q_PROPERTY(Quality quality      READ quality    WRITE setQuality    NOTIFY qualityChanged)
+    Q_PROPERTY(QString qualityS     READ qualityS   NOTIFY qualityChanged)
     Q_PROPERTY(Cookness cookness    READ cookness   WRITE setCookness   NOTIFY cooknessChanged)
+    Q_PROPERTY(QString cooknessS    READ cooknessS  NOTIFY cooknessChanged)
     Q_PROPERTY(Bait bait            READ bait       WRITE setBait       NOTIFY baitChanged)
+    Q_PROPERTY(QString baitS        READ baitS      NOTIFY baitChanged)
     Q_PROPERTY(Location location    READ location   WRITE setLocation   NOTIFY locationChanged)
+    Q_PROPERTY(QString locationS    READ locationS  NOTIFY locationChanged)
 
     QString m_name;
     bool m_isTrophy;
@@ -35,10 +40,15 @@ public:
     bool isTrophy() const;
     int price() const;
     FType type() const;
+    QString typeS() const;
     Quality quality() const;
+    QString qualityS() const;
     Cookness cookness() const;
+    QString cooknessS() const;
     Bait bait() const;
+    QString baitS() const;
     Location location() const;
+    QString locationS() const;
 public slots:
     void setName(QString name);
     void setIsTrophy(bool isTrophy);
