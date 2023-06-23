@@ -2,5 +2,15 @@
     <qresource prefix="/">
         <file>images/gold.png</file>
         <file>images/FishNGrog.png</file>
+        <file>images/Ancientscale.png</file>
+        <file>images/Battlegill.png</file>
+        <file>images/Devilfish.png</file>  
+        <file>images/Islehopper.png</file>
+        <file>images/Plentifin.png</file>
+        <file>images/Pondie.png</file>
+        <file>images/Splashtail.png</file>
+        <file>images/Stormfish.png</file>
+        <file>images/Wildsplash.png</file>
+        <file>images/Wrecker.png</file>
     </qresource>
 </RCC>
